@@ -1,0 +1,6 @@
+C:\Users\bedir\source\repos\STOKTAKIP\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\bedir\source\repos\STOKTAKIP\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\bedir\source\repos\STOKTAKIP\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\bedir\source\repos\STOKTAKIP\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bedir\source\repos\STOKTAKIP\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\bedir\source\repos\STOKTAKIP\BusinessLayer\obj\Debug\BusinessLayer.pdb
