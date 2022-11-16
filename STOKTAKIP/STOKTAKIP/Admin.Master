@@ -18,103 +18,24 @@
             background-image: url("resimler/lockforadminpanel.png");
             margin: 0;
         }
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            height: 120px;
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {
-            height: 450px
-        }
-
-        /* Set gray background color and 100% height */
-        /*     .sidenav {
-            font-size: 10px;
-            padding-top: 10px;
-            height: 10px;
-            background-color: #f1f1f1;
-            height: 100%;
-        }*/
-
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
-
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
-        }
+        
 
         .auto-style1 {
             left: 0px;
             top: 1px;
             height: 100%;
         }
-
-        .imgDiv {
-            margin-left: 20px;
-            width: 300px;
-            height: 200px;
-        }
-
-        .header img {
-            width: 100%;
-            height: 100%;
-        }
-
         .header-right {
             float: right;
-        }
-
-        .dropdown1 {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content1 {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: auto;
-            box-shadow: 0px 4px 8px 0px #76bfa4;
-            padding: 1px 3px;
-            z-index: 1;
-            font-size: 10px;
-        }
-
-        .dropdown1:hover .dropdown-content1 {
-            display: flex;
         }
 
         li a {
             background-color: rebeccapurple;
         }
-
-
-
-
-
-
-
-        /* Fixed sidenav, full height */
         .sidenav {
-            font-size: 10px;
+            font-size: 14px;
         }
 
-            /* Style the sidenav links and the dropdown button */
             .sidenav a, .dropdown-btn .sidenav div {
                 padding: 6px 8px 6px 16px;
                 text-decoration: none;
@@ -129,36 +50,9 @@
                 outline: none;
             }
 
-                /* On mouse-over */
-                .sidenav a:hover, .dropdown-btn:hover {
-                    color: dimgray;
-                }
+             
 
-        /* Main content */
-        .main {
-            margin-left: 200px; /* Same as the width of the sidenav */
-            font-size: 20px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
 
-        /* Add an active class to the active dropdown button */
-        .active {
-            background-color: green;
-            color: white;
-        }
-
-        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-        .dropdown-container {
-            display: none;
-            background-color: #262626;
-            padding-left: 8px;
-        }
-
-        /* Optional: Style the caret down icon */
-        .fa-caret-down {
-            float: right;
-            padding-right: 8px;
-        }
     </style>
 </head>
 <body>
@@ -195,18 +89,6 @@
         </div>
 
     </form>
-    <script>
-        $(function () {
 
-            var sidebarWidth = $(".sidebar-menu").width();
-
-            $("li.dropdown-list").hover(function () {
-                $(this).find("ul").css("left", sidebarWidth).slideToggle("slow");
-            }, function () {
-                $(this).find("ul").hide().css("left", 0);
-            });
-
-        });
-    </script>
 </body>
 </html>

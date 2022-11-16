@@ -24,11 +24,20 @@ namespace STOKTAKIP
             id = Convert.ToInt32(Request.QueryString["Urunid"]);
             if (Page.IsPostBack == false)
             {
-                //SayfayiYukle();
+                SayfayiYukle();
             }
         }
         private void SayfayiYukle()
         {
+            if (islem=="azalt")
+            {
+                lbl_degisenUrunMiktari.Text = "Çıkarılacak ürün miktarı";
+            }
+            else if(islem=="arttir")
+            {
+                lbl_degisenUrunMiktari.Text = "Eklenecek ürün miktarı";
+
+            }
         }
         protected void GuncellemeMiktariniDuzenle()
         {

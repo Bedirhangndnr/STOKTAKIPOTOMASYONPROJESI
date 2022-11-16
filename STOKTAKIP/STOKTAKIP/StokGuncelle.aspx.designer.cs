@@ -24,6 +24,15 @@ namespace STOKTAKIP
         protected global::System.Web.UI.WebControls.TextBox txtbx_UrunKodu;
 
         /// <summary>
+        /// lbl_degisenUrunMiktari control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_degisenUrunMiktari;
+
+        /// <summary>
         /// txtbx_Adet control.
         /// </summary>
         /// <remarks>

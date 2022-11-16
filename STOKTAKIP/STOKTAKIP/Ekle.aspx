@@ -43,27 +43,11 @@
         <tr>
             <td class="auto-style3"></td>
             <td class="auto-style4">
-                <%--################################onclientclick özelliğine confirm(alert('gerçekten gundellemek istediğinize eminmisiniz uyarısını ekleyemedim)) ###########################################################--%>
-
                     <asp:Button ID="btn_Guncele" OnClientClick="ClearTB()" Text="Ekle" CssClass="btn btn-success" runat="server" OnCommand="Guncelle_Ekle" CommandArgument='<%# Eval("id") %>'/>
-
                 <br />
                 <br />
                 <asp:Label ID="lbl_BasariliYadaDegil" runat="server" Text="Label"></asp:Label>
                 <br />
 
     </table>
-
-
-
-    <script>
-        function ClearTB() {
-            document.getElementById("txtbx_UrunAdi").value = document.getElementById("txtbx_UrunAdi").value.replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("txtbx_UrunKodu").value = document.getElementById("txtbx_UrunKodu").value.replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("txtbx_Adet").value = document.getElementById("txtbx_Adet").value.replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("txtbxYemekMalzemeler").value = document.getElementById("txtbxYemekMalzemeler").value.replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("txtbxYemekTarif").value = document.getElementById("txtbxYemekTarif").value.replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("ddlKategoriler").value = document.getElementById("ddlKategoriler").value.replace(/^\s+/, '').replace(/\s+$/, '');
-        }
-    </script>
 </asp:Content>

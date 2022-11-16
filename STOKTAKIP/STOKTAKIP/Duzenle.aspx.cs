@@ -28,14 +28,6 @@ namespace STOKTAKIP
         private void SayfayiYukle()
         {
             lbl_BasariliYadaDegil.Visible = false;
-            if (islem == "ekle")
-            {
-                //btn_Sil.Visible = false;
-                //btn_Guncele.Text = "Ekle";
-                //btn_GununYemegiYp.Visible = false;
-            }
-
-
             VeriTabaniIslemleri veriTabaniIslemleri_urunGetir = new VeriTabaniIslemleri();
             veriTabaniIslemleri_urunGetir.BaglantiBaslat();
             Urun urun = new Urun(veriTabaniIslemleri_urunGetir);
@@ -45,7 +37,6 @@ namespace STOKTAKIP
 
             foreach (DataRow r in dt.Rows)
             {
-                //ddlKategoriler.SelectedValue = dr[7].ToString();
                 txtbx_UrunAdi.Text = r["urun_adi"].ToString();
                 txtbx_Adet.Text = r["urun_sayisi"].ToString();
                 lbl_UrunKodu.Text = r["urun_kodu"].ToString();
