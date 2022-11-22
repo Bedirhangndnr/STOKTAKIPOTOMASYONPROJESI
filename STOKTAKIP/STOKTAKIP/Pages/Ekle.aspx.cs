@@ -75,16 +75,27 @@ namespace STOKTAKIP
                         }
                         else
                         {
-                            VeriTabaniIslemleri veriTabaniIslemleriUrunEkle = new VeriTabaniIslemleri();
-                            veriTabaniIslemleriUrunEkle.BaglantiBaslat();
-                            Urun urun = new Urun(veriTabaniIslemleriUrunEkle);
-                            urun.Kod = Convert.ToInt32(txtbx_UrunKodu.Text);
-                            urun.Isim = txtbx_UrunAdi.Text;
-                            urun.Sayi = Convert.ToInt32(txtbx_Adet.Text);
-                            urun.Insert();
-                            veriTabaniIslemleriUrunEkle.BaglantiBitir();
-                            lbl_BasariliYadaDegil.Visible = false;
-                            AlanlariTemizle();
+                            if (txtbx_UrunAdi.Text.Length>250)
+                            {
+                                lbl_BasariliYadaDegil.Visible = true;
+                                lbl_BasariliYadaDegil.Text = "Ürün adı 250 karakterden küçük olmalı. Kontrol ediniz.";
+                            }
+                            else
+                            {
+                                VeriTabaniIslemleri veriTabaniIslemleriUrunEkle = new VeriTabaniIslemleri();
+                                veriTabaniIslemleriUrunEkle.BaglantiBaslat();
+                                Urun urun = new Urun(veriTabaniIslemleriUrunEkle);
+                                urun.Kod = Convert.ToInt32(txtbx_UrunKodu.Text);
+                                urun.Isim = txtbx_UrunAdi.Text;
+                                urun.Sayi = Convert.ToInt32(txtbx_Adet.Text);
+                                urun.Insert();
+                                veriTabaniIslemleriUrunEkle.BaglantiBitir();
+                                lbl_BasariliYadaDegil.Visible = false;
+                                AlanlariTemizle();
+                                lbl_BasariliYadaDegil.Visible = true;
+                                lbl_BasariliYadaDegil.ForeColor = System.Drawing.Color.Green;
+                                lbl_BasariliYadaDegil.Text = "Başarılı... Ürün kaydedildi.";
+                            }    
                         }
                     }
                 }

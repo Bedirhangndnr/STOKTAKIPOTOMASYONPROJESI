@@ -59,28 +59,7 @@ namespace BusinessLayer.Work
                 return null;
             }
         }
-        // aşağıdaki 3 fonksiyonu yazıp kullandıktan sonra uygula fonksiyonunu yazıp onu kullandım. bu veritabani islemleri sınıfında
-        // insert update delete fonksiyononları yerine bir uygulama fonksiyonu yeterli sanırım?
-        public void Insert()
-        {
-            comm.CommandText = spAd;
-            comm.CommandType = System.Data.CommandType.StoredProcedure;
-            comm.ExecuteNonQuery();
-        }
 
-        public void Update()
-        {
-            comm.CommandText = spAd;
-            comm.CommandType = System.Data.CommandType.StoredProcedure;
-            comm.ExecuteNonQuery();
-        }
-
-        public void Delete()
-        {
-            comm.CommandType = System.Data.CommandType.StoredProcedure;
-            comm.CommandText = spAd;
-            comm.ExecuteNonQuery();
-        }
         public void Calistir()
         {
             DeleteSqlParameters();
@@ -95,27 +74,6 @@ namespace BusinessLayer.Work
             sqlParameters_.Clear();
 
         }
-        public void Uygula()
-        {
-            DeleteSqlParameters();
-            for (int i = 0; i < sqlParameters_.Count; i++)
-            {
-                comm.Parameters.AddWithValue(sqlParameters_[i].ParameterName, sqlParameters_[i].Value);
-            }
-            comm.CommandType = System.Data.CommandType.StoredProcedure;
-            comm.CommandText = spAd;
-            comm.ExecuteNonQuery();
-            sqlParameters_.Clear();
-        }
-        public SqlDataReader GetAll()
-        {
-            comm.CommandText = spAd;
-            comm.CommandType = System.Data.CommandType.StoredProcedure;
-            SqlDataReader dr = comm.ExecuteReader();
-            return dr;
-        }
-
-
         private DataTable veriTablosu = new DataTable();
         public DataTable VeriTablosu
         {
@@ -124,21 +82,13 @@ namespace BusinessLayer.Work
         }
         public void TabloGetir()
         {
-            //BaglantiBitir();
-            //BaglantiBaslat();
             comm.CommandText = spAd;
             comm.CommandType = System.Data.CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(comm);
             da.Fill(veriTablosu);
         }
 
-        public SqlDataReader GetById()
-        {
-            comm.CommandText = spAd;
-            comm.CommandType = System.Data.CommandType.StoredProcedure;
-            SqlDataReader dr = comm.ExecuteReader();
-            return dr;
-        }
+
         public void AddSqlParameter(string parameterName, object parameterValue)
         {
 

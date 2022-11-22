@@ -1,0 +1,4 @@
+﻿C:\Users\bedir\OneDrive\Belgeler\GitHub\STOKTAKIPOTOMASYONPROJESI\STOKTAKIP\BusinessLayer\Class1.cs
+C:\Users\bedir\OneDrive\Belgeler\GitHub\STOKTAKIPOTOMASYONPROJESI\STOKTAKIP\BusinessLayer\Entity\Urun.cs
+C:\Users\bedir\OneDrive\Belgeler\GitHub\STOKTAKIPOTOMASYONPROJESI\STOKTAKIP\BusinessLayer\Properties\AssemblyInfo.cs
+C:\Users\bedir\OneDrive\Belgeler\GitHub\STOKTAKIPOTOMASYONPROJESI\STOKTAKIP\BusinessLayer\Work\VeritabaniIslemleri.cs

@@ -30,8 +30,8 @@ namespace STOKTAKIP
             VeriTabaniIslemleri veriTabaniIslemleri = new VeriTabaniIslemleri();
             veriTabaniIslemleri.BaglantiBaslat();
             Urun urun = new Urun(veriTabaniIslemleri);
-            SqlDataReader sqlDataReader = urun.GetAll();
-            DataList1.DataSource = sqlDataReader;
+            DataTable dt = urun.TumunuGetir();
+            DataList1.DataSource = dt;
             DataList1.DataBind();
             veriTabaniIslemleri.BaglantiBitir();
         }

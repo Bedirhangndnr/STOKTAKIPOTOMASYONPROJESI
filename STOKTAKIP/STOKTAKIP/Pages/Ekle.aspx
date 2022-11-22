@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Ekle.aspx.cs" Inherits="STOKTAKIP.Ekle" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Admin.Master" AutoEventWireup="true" CodeBehind="Ekle.aspx.cs" Inherits="STOKTAKIP.Ekle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style2 {
@@ -46,7 +46,7 @@
                     <asp:Button ID="btn_Guncele" OnClientClick="ClearTB()" Text="Ekle" CssClass="btn btn-success" runat="server" OnCommand="Guncelle_Ekle" CommandArgument='<%# Eval("id") %>'/>
                 <br />
                 <br />
-                <asp:Label ID="lbl_BasariliYadaDegil" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="lbl_BasariliYadaDegil" runat="server" Text="Label" Visible="False"></asp:Label>
                 <br />
 
     </table>

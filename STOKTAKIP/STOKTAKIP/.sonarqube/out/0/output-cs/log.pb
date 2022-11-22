@@ -1,0 +1,1 @@
+Roslyn version: 4.3.0.0Language version: CSharp7_3!Concurrent execution: enabled¾¹File 'C:\Users\bedir\OneDrive\Belgeler\GitHub\STOKTAKIPOTOMASYONPROJESI\STOKTAKIP\BusinessLayer\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs' was recognized as generated

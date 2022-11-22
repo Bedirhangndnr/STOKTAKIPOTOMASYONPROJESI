@@ -67,53 +67,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controller.js" />
-    <Content Include="Duzenle.aspx" />
-    <Content Include="Ekle.aspx" />
-    <Content Include="StokGuncelle.aspx" />
-    <Content Include="UrunListesi.aspx" />
+    <Content Include="Pages\Duzenle.aspx" />
+    <Content Include="Pages\Ekle.aspx" />
+    <Content Include="Pages\StokGuncelle.aspx" />
+    <Content Include="Pages\UrunListesi.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.Master.cs">
+    <Compile Include="MasterPages\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin.Master.designer.cs">
+    <Compile Include="MasterPages\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Duzenle.aspx.cs">
+    <Compile Include="Pages\Duzenle.aspx.cs">
       <DependentUpon>Duzenle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Duzenle.aspx.designer.cs">
+    <Compile Include="Pages\Duzenle.aspx.designer.cs">
       <DependentUpon>Duzenle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ekle.aspx.cs">
+    <Compile Include="Pages\Ekle.aspx.cs">
       <DependentUpon>Ekle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ekle.aspx.designer.cs">
+    <Compile Include="Pages\Ekle.aspx.designer.cs">
       <DependentUpon>Ekle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StokGuncelle.aspx.cs">
+    <Compile Include="Pages\StokGuncelle.aspx.cs">
       <DependentUpon>StokGuncelle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="StokGuncelle.aspx.designer.cs">
+    <Compile Include="Pages\StokGuncelle.aspx.designer.cs">
       <DependentUpon>StokGuncelle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UrunListesi.aspx.cs">
+    <Compile Include="Pages\UrunListesi.aspx.cs">
       <DependentUpon>UrunListesi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UrunListesi.aspx.designer.cs">
+    <Compile Include="Pages\UrunListesi.aspx.designer.cs">
       <DependentUpon>UrunListesi.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin.Master" />
+    <Content Include="MasterPages\Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -128,6 +127,7 @@
       <Name>BusinessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

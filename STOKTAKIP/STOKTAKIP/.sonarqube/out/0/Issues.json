@@ -1,0 +1,655 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.3.0.0",
+        "fileVersion": "4.3.0-3.22423.10 (b35bb0ba)",
+        "semanticVersion": "4.3.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS0162",
+          "level": "warning",
+          "message": "Unreachable code detected",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 17,
+                  "endLine": 59,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 13,
+                  "endLine": 132,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 13,
+                  "endLine": 94,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 13,
+                  "endLine": 127,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'comm' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 20,
+                  "endLine": 14,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'sqlParameters_' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 28,
+                  "endLine": 16,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 23,
+                  "endLine": 17,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 23,
+                  "endLine": 37,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 39,
+                  "endLine": 19,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 26,
+                  "endLine": 120,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 20,
+                  "endLine": 31,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 20,
+                  "endLine": 43,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 30,
+                  "endLine": 19,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 20,
+                  "endLine": 49,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'Insert'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 21,
+                  "endLine": 71,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 21,
+                  "endLine": 64,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'Calistir'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 21,
+                  "endLine": 98,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 21,
+                  "endLine": 84,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'GetAll'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 30,
+                  "endLine": 135,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 30,
+                  "endLine": 110,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Work/VeritabaniIslemleri.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 13,
+                  "endLine": 34,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 13,
+                  "endLine": 75,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 13,
+                  "endLine": 125,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 13,
+                  "endLine": 141,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/bedir/OneDrive/Belgeler/GitHub/STOKTAKIPOTOMASYONPROJESI/STOKTAKIP/BusinessLayer/Entity/Urun.cs",
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 13,
+                  "endLine": 159,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS0162": {
+          "id": "CS0162",
+          "shortDescription": "Unreachable code detected",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0162)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1104": {
+          "id": "S1104",
+          "shortDescription": "Fields should not have public accessibility",
+          "fullDescription": "Public fields in public classes do not respect the encapsulation principle and has three main disadvantages:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1104",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2292": {
+          "id": "S2292",
+          "shortDescription": "Trivial properties should be auto-implemented",
+          "fullDescription": "Trivial properties, which include no logic but setting and getting a backing field should be converted to auto-implemented properties, yielding cleaner and more readable code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2292",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2737": {
+          "id": "S2737",
+          "shortDescription": "\"catch\" clauses should do more than rethrow",
+          "fullDescription": "A catch clause that only rethrows the caught exception has the same effect as omitting the catch altogether and letting it bubble up automatically, but with more code and the additional detriment of leaving maintainers scratching their heads.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2737",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4144": {
+          "id": "S4144",
+          "shortDescription": "Methods should not have identical implementations",
+          "fullDescription": "When two methods have the same implementation, either it was a mistake - something else was intended - or the duplication was intentional, but may be confusing to maintainers. In the latter case, one implementation should invoke the other.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

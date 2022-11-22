@@ -68,22 +68,30 @@ namespace STOKTAKIP
                     }
                     else
                     {
-                        VeriTabaniIslemleri veriTabaniIslemleri = new VeriTabaniIslemleri();
-                        veriTabaniIslemleri.BaglantiBaslat();
-                        Urun urun = new Urun(veriTabaniIslemleri);
-                        urun.ID = id;
-                        urun.Isim = txtbx_UrunAdi.Text;
-                        urun.Sayi = Convert.ToInt32(txtbx_Adet.Text);
-                        urun.Kod = Convert.ToInt32(lbl_UrunKodu.Text);
-                        urun.Update();
-                        veriTabaniIslemleri.BaglantiBitir();
-                        AlanlariTemizle();
+                        if (txtbx_UrunAdi.Text.Length > 250)
+                        {
+                            lbl_BasariliYadaDegil.Visible = true;
+                            lbl_BasariliYadaDegil.Text = "Ürün adı 250 karakterden küçük olmalı. Kontrol ediniz.";
+                        }
+                        else
+                        {
+                            VeriTabaniIslemleri veriTabaniIslemleri = new VeriTabaniIslemleri();
+                            veriTabaniIslemleri.BaglantiBaslat();
+                            Urun urun = new Urun(veriTabaniIslemleri);
+                            urun.ID = id;
+                            urun.Isim = txtbx_UrunAdi.Text;
+                            urun.Sayi = Convert.ToInt32(txtbx_Adet.Text);
+                            urun.Kod = Convert.ToInt32(lbl_UrunKodu.Text);
+                            urun.Update();
+                            veriTabaniIslemleri.BaglantiBitir();
+                            AlanlariTemizle();
+                            lbl_BasariliYadaDegil.Visible = true;
+                            lbl_BasariliYadaDegil.ForeColor = System.Drawing.Color.Green;
+                            lbl_BasariliYadaDegil.Text = "Başarılı... Ürün bilgileri güncellendi.";
+                        }
                     }
-
-
                 }
             }
-
         }
 
         protected void btn_sil_Command(object sender, CommandEventArgs e)
