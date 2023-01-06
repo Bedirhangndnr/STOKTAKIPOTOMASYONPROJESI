@@ -51,6 +51,18 @@ namespace BusinessLayer.Entity
             get { return stokGuncllemeMiktari; }
             set { stokGuncllemeMiktari = value; }
         }
+        private int urun_agirligi;
+        public int Urun_agirligi
+        {
+            get { return urun_agirligi; }
+            set { urun_agirligi = value; }
+        }
+        private bool hasarli_mi;
+        public bool Hasarli_mi
+        {
+            get { return hasarli_mi; }
+            set { hasarli_mi = value; }
+        }
         public DataTable SatirGetir()
         {
             veritabaniIslem.spAd = "sp_urunlerigetir_idile";
@@ -77,15 +89,33 @@ namespace BusinessLayer.Entity
         public DataTable TumunuGetir()
         {
             veritabaniIslem.spAd = "sp_urunlerigetir";
+            veritabaniIslem.AddSqlParameter("@id", id);
+            veritabaniIslem.AddSqlParameter("@hasarli_mi", hasarli_mi);
+            try
+            {
+                veritabaniIslem.Calistir();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            veritabaniIslem.TabloGetir();
+            return veritabaniIslem.VeriTablosu;
+        }
+        public DataTable StoguBitenleriGetir()
+        {
+            veritabaniIslem.spAd = "sp_tumunugetir_stogubitmisurunler";
             veritabaniIslem.TabloGetir();
             return veritabaniIslem.VeriTablosu;
         }
         public DataTable UrunKodunaGoreSatirGetir()
         {
-            veritabaniIslem.spAd = "sp_urunkodunagoresatirgetir";
-            veritabaniIslem.AddSqlParameter("@urun_kodu", kod);
-            veritabaniIslem.Calistir();
 
+            veritabaniIslem.spAd = "sp_urunkodunagoresatirgetir";
+            veritabaniIslem.AddSqlParameter("@urun_kodu", Kod);
+
+            veritabaniIslem.Calistir();
             veritabaniIslem.TabloGetir();
             return veritabaniIslem.VeriTablosu;
         }
@@ -108,6 +138,8 @@ namespace BusinessLayer.Entity
             veritabaniIslem.AddSqlParameter("@urun_adi", isim);
             veritabaniIslem.AddSqlParameter("@urun_sayisi", sayi);
             veritabaniIslem.AddSqlParameter("@urun_kodu", kod);
+            veritabaniIslem.AddSqlParameter("@urun_agirligi", urun_agirligi);
+            veritabaniIslem.AddSqlParameter("@hasarli_mi", hasarli_mi);
             try
             {
                 veritabaniIslem.Calistir();
@@ -123,6 +155,7 @@ namespace BusinessLayer.Entity
             veritabaniIslem.spAd = "sp_stokguncelle";
             veritabaniIslem.AddSqlParameter("@stok_guncelleme_miktari", stokGuncllemeMiktari);
             veritabaniIslem.AddSqlParameter("@urun_kodu", kod);
+
             try
             {
                 veritabaniIslem.Calistir();
@@ -140,6 +173,8 @@ namespace BusinessLayer.Entity
             veritabaniIslem.AddSqlParameter("@urun_adi", isim);
             veritabaniIslem.AddSqlParameter("@urun_sayisi", sayi);
             veritabaniIslem.AddSqlParameter("@urun_kodu", kod);
+            veritabaniIslem.AddSqlParameter("@urun_agirligi", urun_agirligi);
+            veritabaniIslem.AddSqlParameter("@hasarli_mi", hasarli_mi);
             try
             {
                 veritabaniIslem.Calistir();

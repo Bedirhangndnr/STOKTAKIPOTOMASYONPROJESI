@@ -24,13 +24,22 @@ namespace STOKTAKIP
         protected global::System.Web.UI.WebControls.TextBox txtbx_SrcBtn;
 
         /// <summary>
-        /// btn_Ara control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Ara;
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// btn_StoktaBulunmayanlar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_StoktaBulunmayanlar;
 
         /// <summary>
         /// DataList1 control.

@@ -40,6 +40,15 @@ namespace STOKTAKIP
                 txtbx_UrunAdi.Text = r["urun_adi"].ToString();
                 txtbx_Adet.Text = r["urun_sayisi"].ToString();
                 lbl_UrunKodu.Text = r["urun_kodu"].ToString();
+                txtbx_UrunAgirligi.Text = r["urun_agirligi"].ToString();
+                if (Convert.ToBoolean(r["hasarli_mi"])==true)
+                {
+                    checkBox_hasarlimi.Checked = true;
+                }
+                else
+                {
+                    checkBox_hasarlimi.Checked = false;
+                }
             }
         }
         protected void AlanlariTemizle()
@@ -47,6 +56,8 @@ namespace STOKTAKIP
             txtbx_Adet.Text = string.Empty;
             txtbx_UrunAdi.Text = string.Empty;
             lbl_BasariliYadaDegil.Text = string.Empty;
+            txtbx_UrunAgirligi.Text = string.Empty;
+            checkBox_hasarlimi.Checked= false;
         }
         protected void btn_Guncele_Command(object sender, CommandEventArgs e)
         {
@@ -82,6 +93,14 @@ namespace STOKTAKIP
                             urun.Isim = txtbx_UrunAdi.Text;
                             urun.Sayi = Convert.ToInt32(txtbx_Adet.Text);
                             urun.Kod = Convert.ToInt32(lbl_UrunKodu.Text);
+                            if (checkBox_hasarlimi.Checked)
+                            {
+                                urun.Hasarli_mi = true;
+                            }
+                            else
+                            {
+                                urun.Hasarli_mi = false;
+                            }
                             urun.Update();
                             veriTabaniIslemleri.BaglantiBitir();
                             AlanlariTemizle();

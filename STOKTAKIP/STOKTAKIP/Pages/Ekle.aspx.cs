@@ -88,6 +88,7 @@ namespace STOKTAKIP
                                 urun.Kod = Convert.ToInt32(txtbx_UrunKodu.Text);
                                 urun.Isim = txtbx_UrunAdi.Text;
                                 urun.Sayi = Convert.ToInt32(txtbx_Adet.Text);
+                                urun.Urun_agirligi = Convert.ToInt32(txtbx_UrunAgirligi.Text);
                                 urun.Insert();
                                 veriTabaniIslemleriUrunEkle.BaglantiBitir();
                                 lbl_BasariliYadaDegil.Visible = false;

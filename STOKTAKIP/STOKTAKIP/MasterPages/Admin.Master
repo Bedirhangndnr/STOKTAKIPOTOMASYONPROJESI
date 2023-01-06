@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
- <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -18,13 +18,14 @@
             background-image: url("resimler/lockforadminpanel.png");
             margin: 0;
         }
-        
+
 
         .auto-style1 {
             left: 0px;
             top: 1px;
             height: 100%;
         }
+
         .header-right {
             float: right;
         }
@@ -32,6 +33,7 @@
         li a {
             background-color: rebeccapurple;
         }
+
         .sidenav {
             font-size: 14px;
         }
@@ -49,10 +51,6 @@
                 cursor: pointer;
                 outline: none;
             }
-
-             
-
-
     </style>
 </head>
 <body>
@@ -74,12 +72,18 @@
                 <div class="col-md-2 sidenav">
                     <div class="list-group">
                         <ul>
-                            <li><a href="UrunListesi.aspx" class="list-group-item list-group-item-action">Listele</a></li>
+                            <li class="dropdown-list"><a href="UrunListesi.aspx">Listele</a>
+                                <ul style="display: none">
+                                    <li><a href="UrunListesi.aspx?DETAY=saglam">Sağlam Ürünler</a></li>
+                                    <li><a href="UrunListesi.aspx?DETAY=hasarli">Hasarlı Ürünler</a></li>
+                                </ul>
+                            </li>
                             <li><a href="Ekle.aspx" class="list-group-item list-group-item-action">Ekle</a></li>
                             <li><a href="StokGuncelle.aspx?arttirazalt=arttir" class="list-group-item list-group-item-action">Stok Arttır</a></li>
                             <li><a href="StokGuncelle.aspx?arttirazalt=azalt" class="list-group-item list-group-item-action">Stok Azalt</a></li>
-                        </ul>
                     </div>
+
+
                 </div>
                 <div class="col-md-10" style="background-color: #999999; border: 10px solid;">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -89,6 +93,18 @@
         </div>
 
     </form>
+    <script>
+        $(function () {
 
+            var sidebarWidth = $(".sidebar-menu").width();
+
+            $("li.dropdown-list").hover(function () {
+                $(this).find("ul").css("left", sidebarWidth).slideToggle("fast");
+            }, function () {
+                $(this).find("ul").hide().css("left", 0);
+            });
+
+        });
+    </script>
 </body>
 </html>

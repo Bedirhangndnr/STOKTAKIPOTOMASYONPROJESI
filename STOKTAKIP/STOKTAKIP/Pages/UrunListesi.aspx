@@ -44,8 +44,8 @@
     <div class="wrap">
         <div class="search">
             <asp:TextBox runat="server" ID="txtbx_SrcBtn" placeholder="Ürün adı ara" CssClass="searchTerm" />
-            <asp:Button ID="btn_Ara" Text="Ara" CssClass="btn btn-success" runat="server" OnCommand="btn_Ara_Command" />
-
+            <asp:Button ID="Button1" Text="Listele" CssClass="btn btn-success" runat="server" OnCommand="btn_Ara_Command" />
+            <asp:Button ID="btn_StoktaBulunmayanlar" Text="Stoğu Bitenleri Listele" CssClass="btn btn-success" runat="server" OnCommand="btn_StoktaBulunmayanlar_Command" />
         </div>
     </div>
     <div class="yemek-listesi">
@@ -56,11 +56,13 @@
                     <tr>
                         <td class="col-md-2"><strong style="font-size: 22px">Ürün adı</strong>
                         </td>
-                        <td class="col-md-3"><strong style="font-size: 22px">Ürün Adedi</strong>
+                        <td class="col-md-2"><strong style="font-size: 22px">Ürün Adedi</strong>
                         </td>
-                        <td class="col-md-3"><strong style="font-size: 22px">Ürün Kodu</strong>
-                        </td>
-                        <td>&nbsp;</td>
+                        <td class="col-md-2"><strong style="font-size: 22px">Ürün Kodu</strong>
+                        <td class="col-md-2"><strong style="font-size: 22px">Ürün Kodu</strong>
+                            <td class="col-md-2"><strong style="font-size: 22px">Ürün Kodu</strong>
+                            </td>
+                            <td>&nbsp;</td>
                         </td>
 
                     </tr>
@@ -72,11 +74,17 @@
                         <td class="col-md-2"><strong>
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text='<%# Eval("urun_adi") %>'></asp:Label>
                         </strong></td>
-                        <td class="col-md-3"><strong>
+                        <td class="col-md-2"><strong>
                             <asp:Label ID="lblYemekIsım" runat="server" CssClass="auto-style4" Text='<%# Eval("urun_sayisi") %>'></asp:Label>
                         </strong></td>
-                        <td class="col-md-3"><strong>
+                        <td class="col-md-2"><strong>
                             <asp:Label ID="Label2" runat="server" CssClass="auto-style4" Text='<%# Eval("urun_kodu") %>'></asp:Label>
+                        </strong></td>
+                        <td class="col-md-2"><strong>
+                            <asp:Label ID="Label3" runat="server" CssClass="auto-style4" Text='<%# Eval("urun_agirligi") %>'></asp:Label>
+                        </strong></td>
+                        <td class="col-md-2"><strong>
+                            <asp:Label ID="Label4" runat="server" CssClass="auto-style4" Text='<%# Eval("hasarli_mi") %>'></asp:Label>
                         </strong></td>
                         <td class="auto-style3">
                             <asp:LinkButton Style="margin-right: 10px; margin-top: 7px; margin-bottom: 7px" class="btn btn-danger" Text="sil" runat="server" OnCommand="Unnamed_Command" CommandArgument='<%# Eval("id") %>' />

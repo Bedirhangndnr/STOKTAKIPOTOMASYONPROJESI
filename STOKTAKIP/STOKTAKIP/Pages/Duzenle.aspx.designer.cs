@@ -42,6 +42,24 @@ namespace STOKTAKIP
         protected global::System.Web.UI.WebControls.TextBox txtbx_Adet;
 
         /// <summary>
+        /// txtbx_UrunAgirligi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbx_UrunAgirligi;
+
+        /// <summary>
+        /// checkBox_hasarlimi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkBox_hasarlimi;
+
+        /// <summary>
         /// btn_sil control.
         /// </summary>
         /// <remarks>

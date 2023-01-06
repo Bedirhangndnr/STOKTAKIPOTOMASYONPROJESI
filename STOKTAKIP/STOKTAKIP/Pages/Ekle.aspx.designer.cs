@@ -42,6 +42,15 @@ namespace STOKTAKIP
         protected global::System.Web.UI.WebControls.TextBox txtbx_Adet;
 
         /// <summary>
+        /// txtbx_UrunAgirligi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbx_UrunAgirligi;
+
+        /// <summary>
         /// btn_Guncele control.
         /// </summary>
         /// <remarks>

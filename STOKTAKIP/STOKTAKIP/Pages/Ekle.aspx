@@ -39,6 +39,13 @@
 
             </td>
         </tr>
+        <tr>
+            <td class="auto-style2">Ürün Agirligi</td>
+            <td>
+                <asp:TextBox ID="txtbx_UrunAgirligi" runat="server" ClientIDMode="Static" Width="300px" required data-parsley-no-focus data-parsley-error-message="Please enter a message."></asp:TextBox>
+
+            </td>
+        </tr>
 
         <tr>
             <td class="auto-style3"></td>

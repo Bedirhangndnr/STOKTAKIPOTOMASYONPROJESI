@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Entity;
+﻿
+using BusinessLayer.Entity;
 using BusinessLayer.Work;
 using System;
 using System.Collections.Generic;
@@ -65,12 +66,12 @@ namespace STOKTAKIP
             foreach (DataRow r in dt.Rows)
             {
                 int mevcurUrunMiktari = Convert.ToInt32(r["urun_sayisi"].ToString());
-                if (mevcurUrunMiktari-cikarilacakUrunMiktari<0)
+                if (mevcurUrunMiktari+cikarilacakUrunMiktari<0)
                 {
                     return true;
                 }
             }
-            return true;
+            return false;
         }
             protected void btn_Guncele_Command(object sender, CommandEventArgs e)
         {
