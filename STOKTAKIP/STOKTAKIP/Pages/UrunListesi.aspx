@@ -54,13 +54,13 @@
             <HeaderTemplate>
                 <table style="width: 100%;" class="table">
                     <tr>
-                        <td class="col-md-2"><strong style="font-size: 22px">Ürün adı</strong>
+                        <td class="col-md-2"><strong style="font-size: 22px">Ürün Adı</strong>
                         </td>
                         <td class="col-md-2"><strong style="font-size: 22px">Ürün Adedi</strong>
                         </td>
                         <td class="col-md-2"><strong style="font-size: 22px">Ürün Kodu</strong>
-                        <td class="col-md-2"><strong style="font-size: 22px">Ürün Kodu</strong>
-                            <td class="col-md-2"><strong style="font-size: 22px">Ürün Kodu</strong>
+                        <td class="col-md-2"><strong style="font-size: 22px">Ürün Ağırlığı</strong>
+                            <td class="col-md-2"><strong style="font-size: 22px">Ürün Durumu</strong>
                             </td>
                             <td>&nbsp;</td>
                         </td>

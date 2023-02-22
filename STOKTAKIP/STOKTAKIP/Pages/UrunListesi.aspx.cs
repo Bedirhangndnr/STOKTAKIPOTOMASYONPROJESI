@@ -14,23 +14,19 @@ namespace STOKTAKIP
 {
     public partial class UrunListesi : System.Web.UI.Page
     {
-        int id;
         string detay;
-        int kategori_id;
-        string islem = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            id = Convert.ToInt32(Request.QueryString["Yemekid"]);
             detay = Convert.ToString(Request.QueryString["DETAY"]);
             if (!Page.IsPostBack)
             {
-                YemekleriiGetir("tumUrunleriGetir");
+                YemekleriiGetir("tumUrunleriGetir",detay);
 
             }
         }
 
 
-        private void YemekleriiGetir(string yorumTuru)
+        private void YemekleriiGetir(string yorumTuru, string detay)
         {
             VeriTabaniIslemleri veriTabaniIslemleri = new VeriTabaniIslemleri();
             veriTabaniIslemleri.BaglantiBaslat();
@@ -65,12 +61,12 @@ namespace STOKTAKIP
             urun.ID = Convert.ToInt32(e.CommandArgument);
             urun.Delete();
             veriTabaniIslemleri.BaglantiBitir();
-            YemekleriiGetir("tumUrunleriGetir");
+            YemekleriiGetir("tumUrunleriGetir",detay);
         }
 
         protected void btn_Ara_Command(object sender, CommandEventArgs e)
         {
-            YemekleriiGetir("urunAdinaGore");
+            YemekleriiGetir("urunAdinaGore",detay);
         }
 
         protected void btn_StoktaBulunmayanlar_Command(object sender, CommandEventArgs e)
@@ -78,6 +74,21 @@ namespace STOKTAKIP
             VeriTabaniIslemleri veriTabaniIslemleri = new VeriTabaniIslemleri();
             veriTabaniIslemleri.BaglantiBaslat();
             Urun urun = new Urun(veriTabaniIslemleri);
+            if (detay == "saglam")
+            {
+                urun.ID = -1;
+                urun.Hasarli_mi = Convert.ToBoolean(0);
+            }
+            else if (detay == "hasarli")
+            {
+                urun.ID = -1;
+                urun.Hasarli_mi = Convert.ToBoolean(1);
+            }
+            else
+            {
+                urun.ID = 1;
+                urun.Hasarli_mi = true;
+            }
             DataTable dt = urun.StoguBitenleriGetir();
             DataList1.DataSource = dt;
             DataList1.DataBind();

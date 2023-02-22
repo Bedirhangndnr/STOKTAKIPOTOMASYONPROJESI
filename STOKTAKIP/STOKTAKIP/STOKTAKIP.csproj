@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Pages\Duzenle.aspx" />
     <Content Include="Pages\Ekle.aspx" />
+    <Content Include="Pages\SiparisListesi.aspx" />
     <Content Include="Pages\StokGuncelle.aspx" />
     <Content Include="Pages\UrunListesi.aspx" />
     <Content Include="Web.config" />
@@ -94,6 +95,13 @@
     </Compile>
     <Compile Include="Pages\Ekle.aspx.designer.cs">
       <DependentUpon>Ekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SiparisListesi.aspx.cs">
+      <DependentUpon>SiparisListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SiparisListesi.aspx.designer.cs">
+      <DependentUpon>SiparisListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\StokGuncelle.aspx.cs">

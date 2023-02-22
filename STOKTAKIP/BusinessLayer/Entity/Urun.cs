@@ -97,7 +97,6 @@ namespace BusinessLayer.Entity
             }
             catch (Exception)
             {
-
                 throw;
             }
             veritabaniIslem.TabloGetir();
@@ -106,6 +105,16 @@ namespace BusinessLayer.Entity
         public DataTable StoguBitenleriGetir()
         {
             veritabaniIslem.spAd = "sp_tumunugetir_stogubitmisurunler";
+            veritabaniIslem.AddSqlParameter("@id", id);
+            veritabaniIslem.AddSqlParameter("@hasarli_mi", hasarli_mi);
+            try
+            {
+                veritabaniIslem.Calistir();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             veritabaniIslem.TabloGetir();
             return veritabaniIslem.VeriTablosu;
         }

@@ -81,6 +81,7 @@
                             <li><a href="Ekle.aspx" class="list-group-item list-group-item-action">Ekle</a></li>
                             <li><a href="StokGuncelle.aspx?arttirazalt=arttir" class="list-group-item list-group-item-action">Stok Arttır</a></li>
                             <li><a href="StokGuncelle.aspx?arttirazalt=azalt" class="list-group-item list-group-item-action">Stok Azalt</a></li>
+                            <li><a href="SiparisListesi.aspx" class="list-group-item list-group-item-action">Siparisler</a></li>
                     </div>
 
 
